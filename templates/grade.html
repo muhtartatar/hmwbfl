@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade</title>
+</head>
+<body>
+    <h1>Your grade is: {{ user.grade }}</h1>
+    <form method="POST" action="/grade">
+        <input type="hidden" name="name" value="{{ user.name }}">
+        <input type="hidden" name="language" value="{{ user.language }}">
+        <input type="hidden" name="course" value="{{ user.course }}">
+        <input type="submit" value="Get Results">
+    </form>
+</body>
+</html>
+

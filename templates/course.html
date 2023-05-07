@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course</title>
+</head>
+<body>
+    <h1>Choose a course</h1>
+    <form method="POST" action="/course">
+        <input type="hidden" name="name" value="{{ user.name }}">
+        <input type="hidden" name="language" value="{{ user.language }}">
+        <input type="radio" id="base" name="course" value="base">
+        <label for="base">Base Course</label><br>
+        <input type="radio" id="pro" name="course" value="pro">
+        <label for="pro">Pro Course</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
